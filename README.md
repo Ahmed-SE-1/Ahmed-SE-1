@@ -484,7 +484,7 @@
         <div class="header">
             <div class="developer-avatar">👨‍💻</div>
             <h1 class="developer-name">Ahmed Ali</h1>
-            <p class="developer-title">Full Stack Web Developer & Flutter/Dart/React-Native Mobile App Developer</p>
+            <p class="developer-title">Full Stack Web Developer & Flutter/Dart Mobile App Developer</p>
             <p class="location">🇵🇰 Pakistan</p>
             <div class="badges">
                 <span class="badge">🌐 Full Stack</span>
@@ -804,9 +804,10 @@
                         Ready to bring your ideas to life? Let's discuss how we can work together!
                     </p>
                     <div class="contact-links">
-                        <a href="mailto:ahmedaliqurexhi7867@gmail.com" class="contact-link">📧 Email</a>
-                        <a href="https://portfolio-ashen-five-fid1y22m2r.vercel.app/" class="contact-link">🌐 Portfolio</a>
-                        <a href="www.linkedin.com/in/ahmed-ali-69a697369" class="contact-link">💼 LinkedIn</a>
+                        <a href="mailto:abdullahmunir467.@gmail.com" class="contact-link">📧 Email</a>
+                        <a href="https://abdullah-munir.vercel.app" class="contact-link">🌐 Portfolio</a>
+                        <a href="#" class="contact-link">💼 LinkedIn</a>
+                        <a href="#" class="contact-link">🐦 Twitter</a>
                         <a href="#" class="contact-link">📱 WhatsApp</a>
                     </div>
                 </div>
@@ -816,3 +817,235 @@
                     <div class="learning-items">
                         <span class="learning-item">ReactJS</span>
                         <span class="learning-item">NextJS</span>
+                        <span class="learning-item">NodeJS</span>
+                        <span class="learning-item">Flutter</span>
+                        <span class="learning-item">MongoDB</span>
+                        <span class="learning-item">Full Stack Development</span>
+                        <span class="learning-item">Mobile App Development</span>
+                        <span class="learning-item">Project Collaboration</span>
+                    </div>
+                </div>
+                
+                <div class="about-section" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #24292f;">⚡ Fun Fact</h3>
+                    <p class="about-text" style="margin-bottom: 0;">
+                        I think coding is like solving puzzles - addictive and rewarding! Every bug fixed and feature implemented 
+                        feels like completing a challenging puzzle piece. 🧩✨
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Add interactive animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Skill tags hover effect
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                tag.addEventListener('mouseenter', () => {
+                    tag.style.transform = 'scale(1.1)';
+                });
+                
+                tag.addEventListener('mouseleave', () => {
+                    tag.style.transform = 'scale(1)';
+                });
+            });
+
+            // Project cards interactive effect
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Stat cards animation
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    const number = card.querySelector('.stat-number');
+                    number.style.transform = 'scale(1.2)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    const number = card.querySelector('.stat-number');
+                    number.style.transform = 'scale(1)';
+                });
+            });
+
+            // Learning items pulse effect
+            const learningItems = document.querySelectorAll('.learning-item');
+            learningItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.animation = `pulse 2s infinite ${index * 0.1}s`;
+                }, index * 100);
+            });
+
+            // Avatar rotation on hover
+            const avatar = document.querySelector('.developer-avatar');
+            avatar.addEventListener('mouseenter', () => {
+                avatar.style.transform = 'rotate(360deg) scale(1.1)';
+            });
+            
+            avatar.addEventListener('mouseleave', () => {
+                avatar.style.transform = 'rotate(0deg) scale(1)';
+            });
+
+            // Typing animation for developer title
+            const title = document.querySelector('.developer-title');
+            const originalText = title.textContent;
+            let index = 0;
+            
+            function typeWriter() {
+                if (index < originalText.length) {
+                    title.textContent = originalText.substring(0, index + 1) + '|';
+                    index++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    title.textContent = originalText;
+                    setTimeout(() => {
+                        index = 0;
+                        title.textContent = '';
+                        setTimeout(typeWriter, 2000);
+                    }, 3000);
+                }
+            }
+            
+            // Start typing animation after page load
+            setTimeout(typeWriter, 1000);
+        });
+
+        // Add pulse animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+            
+            @keyframes glow {
+                0% { box-shadow: 0 0 5px rgba(102, 126, 234, 0.3); }
+                50% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.6); }
+                100% { box-shadow: 0 0 5px rgba(102, 126, 234, 0.3); }
+            }
+            
+            .skill-category:hover {
+                animation: glow 2s infinite;
+            }
+            
+            .project-card:hover {
+                animation: glow 2s infinite;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add smooth scrolling between sections
+        function smoothScrollTo(element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Add random gradient colors to project icons
+        const projectIcons = document.querySelectorAll('.project-icon');
+        const gradients = [
+            'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+        ];
+
+        projectIcons.forEach((icon, index) => {
+            icon.style.background = gradients[index % gradients.length];
+        });
+
+        // Add progress bars for skills (visual enhancement)
+        const skillCategories = document.querySelectorAll('.skill-category');
+        skillCategories.forEach(category => {
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                width: 0%;
+                height: 3px;
+                background: linear-gradient(90deg, #667eea, #764ba2);
+                border-radius: 2px;
+                margin-top: 15px;
+                transition: width 2s ease-in-out;
+            `;
+            category.appendChild(progressBar);
+            
+            // Animate progress bar on hover
+            category.addEventListener('mouseenter', () => {
+                progressBar.style.width = '100%';
+            });
+            
+            category.addEventListener('mouseleave', () => {
+                progressBar.style.width = '0%';
+            });
+        });
+
+        // Add floating particles effect to header
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.style.cssText = `
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                pointer-events: none;
+                animation: float ${Math.random() * 3 + 2}s linear infinite;
+                left: ${Math.random() * 100}%;
+                top: 100%;
+            `;
+            
+            document.querySelector('.header').appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 5000);
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 300);
+
+        // Add float animation
+        const floatStyle = document.createElement('style');
+        floatStyle.textContent = `
+            @keyframes float {
+                0% {
+                    transform: translateY(0px) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(floatStyle);
+    </script>
+</body>
+</html>

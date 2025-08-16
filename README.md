@@ -1047,5 +1047,7 @@
         `;
         document.head.appendChild(floatStyle);
     </script>
+    <!-- REPO-LIST:START -->
+    <!-- REPO-LIST:END -->
 </body>
 </html>

@@ -11,27 +11,34 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch GitHub Repos
         id: repos
         uses: octokit/request-action@v2.x
         with:
-          route: GET /users/Ahmed-SE-1/repos?sort=updated
+          route: GET /users/Ahmed-SE-1/repos?per_page=100
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update README
         run: |
-          echo "Building repo table..."
+          echo "Building top 6 repos table..."
           content="| Repo | Description | ⭐ Stars | Last Updated |\n|------|-------------|--------|--------------|"
-          for row in $(echo '${{ steps.repos.outputs.data }}' | jq -r '.[] | @base64'); do
-            _jq() { echo ${row} | base64 --decode | jq -r ${1}; }
-            name=$(_jq '.name')
-            desc=$(_jq '.description')
-            stars=$(_jq '.stargazers_count')
-            updated=$(_jq '.updated_at' | cut -d'T' -f1)
-            content="$content\n| [${name}](https://github.com/Ahmed-SE-1/${name}) | ${desc:-No description} | ${stars} | ${updated} |"
-          done
+          
+          # sort repos by stars and take top 6
+          echo '${{ steps.repos.outputs.data }}' \
+            | jq -r 'sort_by(-.stargazers_count)[:6][] | @base64' \
+            | while read row; do
+                _jq() { echo ${row} | base64 --decode | jq -r ${1}; }
+                name=$(_jq '.name')
+                desc=$(_jq '.description')
+                stars=$(_jq '.stargazers_count')
+                updated=$(_jq '.updated_at' | cut -d'T' -f1)
+                content="$content\n| [${name}](https://github.com/Ahmed-SE-1/${name}) | ${desc:-No description} | ${stars} | ${updated} |"
+              done
 
           # Insert into README
           sed -i '/<!-- REPO-LIST:START -->/,/<!-- REPO-LIST:END -->/c\<!-- REPO-LIST:START -->\n'"$content"'\n<!-- REPO-LIST:END -->' README.md
@@ -43,5 +50,3 @@ jobs:
           git add README.md
           git commit -m "Update repo list" || echo "No changes to commit"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

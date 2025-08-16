@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Munir - Full Stack Developer</title>
+    <title>Ahmed Ali - Full Stack Developer</title>
     <style>
         * {
             margin: 0;

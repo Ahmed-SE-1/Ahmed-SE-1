@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # runs every day at midnight
+    - cron: '0 0 * * *'   # runs daily at midnight
   workflow_dispatch:       # allow manual run
 
 jobs:
@@ -12,8 +12,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
           persist-credentials: true
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch GitHub Repos
         id: repos
@@ -21,7 +21,7 @@ jobs:
         with:
           route: GET /users/Ahmed-SE-1/repos?per_page=100
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
       - name: Update README
         run: |
@@ -40,7 +40,7 @@ jobs:
                 content="$content\n| [${name}](https://github.com/Ahmed-SE-1/${name}) | ${desc:-No description} | ${stars} | ${updated} |"
               done
 
-          # Insert into README
+          # Replace inside README markers
           sed -i '/<!-- REPO-LIST:START -->/,/<!-- REPO-LIST:END -->/c\<!-- REPO-LIST:START -->\n'"$content"'\n<!-- REPO-LIST:END -->' README.md
 
       - name: Commit changes
@@ -49,4 +49,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Update repo list" || echo "No changes to commit"
-          git push
+          git push origin HEAD:main

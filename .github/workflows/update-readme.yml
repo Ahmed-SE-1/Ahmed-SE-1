@@ -1,0 +1,47 @@
+name: Update README with All Repos
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Runs every hour
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate Repo List
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const readme = fs.readFileSync('README.md', 'utf-8');
+            
+            const repos = await github.paginate(
+              github.rest.repos.listForUser,
+              { username: 'Ahmed-SE-1', per_page: 100 }
+            );
+
+            // Build repo list
+            let repoList = '';
+            repos.forEach(r => {
+              repoList += `- **[${r.name}](${r.html_url})**  \n  ${r.description || ''}\n\n`;
+            });
+
+            // Replace content between markers
+            const newReadme = readme.replace(
+              /<!-- REPO-LIST:START -->([\s\S]*?)<!-- REPO-LIST:END -->/,
+              `<!-- REPO-LIST:START -->\n${repoList}<!-- REPO-LIST:END -->`
+            );
+
+            fs.writeFileSync('README.md', newReadme);
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update repo list" || echo "No changes"
+          git push

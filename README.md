@@ -182,7 +182,7 @@ console.log("Welcome to my coding journey! 🚀");
 ```yaml
 Project: Full-Stack E-Commerce Platform for Herbs
 Status: 🚀 DEPLOYED
-Tech Stack: [HTML, CSS, JavaScript, Responsive Design]
+Tech Stack: [HTML, CSS, JavaScript, Responsive Design, Node.js, Express, EJS]
 Features:
   - 🌱 Herb Product Catalog
   - 🛒 Shopping Cart System

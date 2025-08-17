@@ -3,8 +3,24 @@
 # <div align="center">🚀 **AHMED ALI** 🚀</div>
 
 <div align="center">
+
+![MasterHead](https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)
+
+</div>
+
+<div align="center">
   
-# <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=60&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=100&lines=AHMED+ALI;احمد+علی;🚀+DEVELOPER+🚀" alt="Name Banner" />
+<div align="center">
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=900&size=60&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=100&lines=AHMED+ALI;احمد+علی;🚀+FULL+STACK+DEVELOPER+🚀;⚡+FLUTTER+EXPERT+⚡)
+
+</div>
+
+<div align="center">
+
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Ahmed%20Ali&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Flutter%20Expert&descAlignY=55&descAlign=50)
+
+</div>
 
 </div>
 

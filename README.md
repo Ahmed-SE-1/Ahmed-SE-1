@@ -46,10 +46,10 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ahmed-ali&label=👁️‍🗨️+Profile+Views&color=blueviolet&style=for-the-badge" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/ahmed-ali?label=🚀+Followers&style=for-the-badge&color=blue" alt="Followers"/>
-  <img src="https://img.shields.io/badge/💡-Always%20Learning-orange?style=for-the-badge" alt="Always Learning"/>
-  <img src="https://img.shields.io/badge/🎯-Problem%20Solver-red?style=for-the-badge" alt="Problem Solver"/>
+  <img src="https://komarev.com/ghpvc/?username=ahmed-ali&label=Profile+Views&color=blueviolet&style=for-the-badge" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/ahmed-ali?label=Followers&style=for-the-badge&color=blue&logo=github" alt="Followers"/>
+  <img src="https://img.shields.io/badge/-Always%20Learning-orange?style=for-the-badge&logo=codeigniter&logoColor=white" alt="Always Learning"/>
+  <img src="https://img.shields.io/badge/-Problem%20Solver-red?style=for-the-badge&logo=leetcode&logoColor=white" alt="Problem Solver"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -290,19 +290,45 @@ Features:
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=40&fontColor=ffffff&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=28&fontColor=ffffff&animation=fadeIn" />
 </div>
 
 <div align="center">
 
 **⭐ If you find my work interesting, please consider starring my repositories! ⭐**
 
-![Snake animation](https://github.com/ahmed-ali/ahmed-ali/blob/output/github-contribution-grid-snake.svg)
+</div>
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                     🐍 CONTRIBUTION SNAKE 🐍                    ║
+║                                                                  ║
+║   ████ ████ ████ ████ ████ ████ ████ ████ ████ ████            ║
+║   ████    ████       ████ ████       ████ ████    ████         ║
+║   ████ ████ ████ ████ ████ ████ ████ ████ ████ ████            ║
+║   ████       ████ ████       ████ ████ ████    ████            ║
+║   ████ ████ ████ ████ ████ ████ ████ ████ ████ ████            ║
+║                                                                  ║
+║              Your contributions make the snake grow! 🚀          ║
+╚══════════════════════════════════════════════════════════════════╝
+```
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=💫+Thanks+for+stopping+by!+💫;🚀+Let's+build+the+future+together!+🚀;⚡+Happy+Coding!+⚡" alt="Footer Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=💫+Thanks+for+stopping+by!+💫;🚀+Let's+build+the+future+together!+🚀;⚡+Happy+Coding!+⚡" alt="Footer Typing" />
+</div>
+
+<div align="center">
+
+```
+    ⭐ Star my repositories if you find them useful! ⭐
+    🤝 Always open to collaboration and new opportunities! 🤝
+    📧 Feel free to reach out for any project discussions! 📧
+```
+
 </div>

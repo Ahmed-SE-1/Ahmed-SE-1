@@ -178,54 +178,71 @@ console.log("Welcome to my coding journey! 🚀");
 
 <div align="center">
 
-### 🌐 **E-COMMERCE EMPIRE**
+### 🌿 **HERB E-COMMERCE WEBSITE**
 ```yaml
-Project: Full-Stack E-Commerce Platform
+Project: Full-Stack E-Commerce Platform for Herbs
 Status: 🚀 DEPLOYED
-Tech Stack: [React, Node.js, MongoDB, Stripe]
+Tech Stack: [HTML, CSS, JavaScript, Responsive Design]
 Features:
+  - 🌱 Herb Product Catalog
   - 🛒 Shopping Cart System
-  - 💳 Payment Integration
-  - 👑 Admin Dashboard
-  - 📧 Email Notifications
-  - 🔐 JWT Authentication
+  - 📱 Mobile Responsive Design
+  - 🎨 Modern UI/UX
+  - 💚 Eco-friendly Theme
 ```
-[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/ahmed-ali)
-[![Live](https://img.shields.io/badge/🌐-Live_Demo-success?style=for-the-badge&logo=vercel)](https://github.com/ahmed-ali)
+[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/Ahmed-SE-1/Herb-Website)
+[![Live](https://img.shields.io/badge/🌐-View_Website-success?style=for-the-badge&logo=vercel)](https://github.com/Ahmed-SE-1/Herb-Website)
 
 ---
 
-### 📱 **FLUTTER CHAT UNIVERSE**
+### ⚡ **TEXT UTILITY REACT APP**
 ```yaml
-Project: Real-Time Chat Application
-Status: 📱 PUBLISHED
-Tech Stack: [Flutter, Dart, Firebase, Cloud Functions]
+Project: Text Manipulation & Analysis Tool
+Status: 🌐 LIVE
+Tech Stack: [React.js, Bootstrap, JavaScript]
 Features:
-  - 💬 Real-Time Messaging
-  - 👥 Group Chats
-  - 📸 Media Sharing
-  - 🔔 Push Notifications
-  - 🌙 Dark/Light Theme
+  - ✂️ Text Case Conversion
+  - 📊 Word & Character Counter
+  - 🎨 Text Formatting Tools
+  - 🌙 Dark/Light Theme Toggle
+  - ⚡ Real-time Text Analysis
 ```
-[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/ahmed-ali)
-[![Download](https://img.shields.io/badge/📲-Download_APK-green?style=for-the-badge&logo=android)](https://github.com/ahmed-ali)
+[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/Ahmed-SE-1)
+[![Live](https://img.shields.io/badge/🚀-Live_Demo-success?style=for-the-badge&logo=vercel)](https://text-utility-f6p5.vercel.app/)
 
 ---
 
-### 📊 **ANALYTICS COMMAND CENTER**
+### 📰 **NEWS WORLD REACT APP**
 ```yaml
-Project: Interactive Data Dashboard
-Status: 📈 LIVE
-Tech Stack: [React, D3.js, Express, PostgreSQL]
+Project: Dynamic News Application
+Status: 📱 DEVELOPED
+Tech Stack: [React.js, News API, Bootstrap]
 Features:
-  - 📊 Real-Time Charts
-  - 🎛️ Custom Filters
-  - 📤 Export Functionality
-  - 🎨 Beautiful Visualizations
-  - ⚡ Lightning Fast
+  - 📰 Live News Updates
+  - 🏷️ Category-wise News
+  - 🔍 Search Functionality
+  - 📱 Responsive Design
+  - ⚡ Fast Loading Interface
 ```
-[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/ahmed-ali)
-[![Demo](https://img.shields.io/badge/🎯-Live_Demo-orange?style=for-the-badge&logo=react)](https://github.com/ahmed-ali)
+[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/Ahmed-SE-1/News-World)
+[![Demo](https://img.shields.io/badge/🎯-View_Code-orange?style=for-the-badge&logo=react)](https://github.com/Ahmed-SE-1/News-World)
+
+---
+
+### 🎥 **VIDEO DOWNLOADER BACKEND**
+```yaml
+Project: Node.js Backend for Flutter Video Downloader
+Status: ⚙️ BACKEND API
+Tech Stack: [Node.js, Express.js, yt-dlp, API]
+Features:
+  - 📹 Video Download API
+  - 🔗 URL Processing
+  - 📱 Flutter App Integration
+  - ⚡ Fast Download Service
+  - 🛡️ Secure API Endpoints
+```
+[![Repo](https://img.shields.io/badge/📁-Repository-00d9ff?style=for-the-badge&logo=github)](https://github.com/Ahmed-SE-1/yt-dlp-backend)
+[![API](https://img.shields.io/badge/⚙️-Backend_API-green?style=for-the-badge&logo=node.js)](https://github.com/Ahmed-SE-1/yt-dlp-backend)
 
 </div>
 
